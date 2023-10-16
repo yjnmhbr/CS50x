@@ -1,0 +1,67 @@
+body
+{
+  font-family: 'Cormorant Garamond', sans-serif;
+  background-image: url("https://images.pexels.com/photos/4065578/pexels-photo-4065578.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+}
+
+h1
+{
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: -30px;
+}
+
+p
+{
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+button
+{
+    color: white;
+}
+
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.navbar {
+  background-color: #000000;
+  font-family: 'Cormorant Garamond', sans-serif;
+  overflow: hidden;
+}
+
+.navbar a {
+
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  background-color: #262626;
+  color: black;
+}
+
+.navbar a:active {
+  background-color: #737373;
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
