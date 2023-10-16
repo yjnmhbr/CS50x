@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            function wrongAnswer1()
+            {
+                document.getElementById("btn1").style.backgroundColor = "red";
+                document.getElementById("text1").innerHTML = "Incorrect.";
+            }
+
+            function wrongAnswer2()
+            {
+                document.getElementById("btn2").style.backgroundColor = "red";
+                document.getElementById("text1").innerHTML = "Incorrect.";
+            }
+
+            function correctAnswer1()
+            {
+                document.getElementById("btn3").style.backgroundColor = "green";
+                document.getElementById("text1").innerHTML = "Correct!";
+            }
+
+            function getAnswer2()
+            {
+                var input = document.getElementById("answer2");
+                var inputText = document.getElementById("answer2").value;
+                if(inputText == 54)
+                {
+                		input.style.backgroundColor = "green";
+                		document.getElementById("text2").innerHTML = "Correct!";
+                }
+                else
+                {
+                		input.style.backgroundColor = "red";
+                		document.getElementById("text2").innerHTML = "Incorrect.";
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the atomic weight of xenon?</h3>
+                <p id = "text1"></p>
+                <div class="btn-group" style="width:99%">
+                    <button id = "btn1" onclick="wrongAnswer1()" style="width:33%">139.21</button>
+                    <button id = "btn2" onclick="wrongAnswer2()" style="width:33%">132.19</button>
+                    <button id = "btn3" onclick="correctAnswer1()" style="width:33%">131.29</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What is the atomic number of xenon?</h3>
+                <p id = "text2"></p>
+                <input type="text" id="answer2">
+                <button type="button" onclick="getAnswer2()">Check Answer</button>
+
+            </div>
+
+        </div>
+    </body>
+</html>
